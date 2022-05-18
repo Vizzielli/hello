@@ -1,0 +1,58 @@
+{
+  "name": "vizzielli/hello",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/autocode/self/deployed.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/message/create.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/command/code.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "code"
+      }
+    },
+    "functions/events/discord/command/nick.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "nick"
+      }
+    },
+    "functions/events/discord/command/google.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "google"
+      }
+    },
+    "functions/events/discord/command/docs.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "docs"
+      }
+    },
+    "functions/events/discord/command/images.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "images"
+      }
+    },
+    "functions/events/discord/command/pls.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "pls"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "SERVER_OWNER",
+      "description": "Owner id to avoid missing permission errors"
+    }
+  ]
+}

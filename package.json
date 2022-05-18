@@ -1,0 +1,8 @@
+{
+  "name": "hello",
+  "author": "Discord Developers Network",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}
